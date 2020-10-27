@@ -1,0 +1,316 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+	font-size: 18px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+.marginTop {
+	margin-top: 45px;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	/*flex: 1;*/
+}
+
+.notOne {
+	display: flex;
+	padding-top: 15px;
+	padding-bottom: 45px;
+}
+
+.couples {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+
+.poly {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.lightGrey {
+	background-color: #e3eef8;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 28px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.name {
+	font-size: 2em;
+	text-align: center;
+}
+
+ h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+ }
+
+.rb {
+	color: #75909a;
+}
+
+.psychotherapy {
+	color: #aa033b;
+}
+
+.main-nav a {
+	text-align: center;  
+	font-size: .95em;
+	color: #3acec2;
+	margin-right: 15px;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.headline {
+	margin: 15px auto;
+	width: 60%;
+	font-size: 38px;
+	color: white;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 1.8em 0;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+}
+
+.footColor {
+	background: #d9e4ea;
+}
+
+/*why does this influence line-height?*/
+.contactInfos {
+	margin: 0px;
+	text-align: left;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (min-width: 200px) {
+	.main-header,
+	.row,
+	.notOne,
+  	.main-footer {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+@media (min-width: 1px) {
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 600px) {
+	.main-header, 
+	.row,
+	.main-footer,
+	.notOne {
+		flex-direction: column;
+		width: 100%;
+	}
+	.headline {
+		font-size: 22px;
+	}
+	.contactInfo {
+		margin-bottom: 30px;
+	}
+	.contactInfos {
+		text-align: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.poly {
+		margin-left: 0px;
+	}
+}
+
+ .form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+
+ @media (max-width: 600px) {
+    .form {
+       flex-direction: column;
+    }
+ }
+
+ .clientInfo {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+ }
+
+ .contactMessage {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+ }
+
+ input[type="text"] {
+    background: #e9e9e9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 33em;
+ }
+
+ input[type="email"] {
+    background: #e9e9e9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 33em;
+ }
+
+ button[type="submit"] {
+    width: 25%;
+    border-radius: 2px 2px;
+    background: #8b798c;
+    font-weight: 300;
+    color: white;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ button[type="submit"]:hover {
+    background: black;
+ }
+
+.firstName, 
+.lastName {
+	margin-bottom: 10px;
+    background: #e9e9e9;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 33em;
+}	
+
+.messageBox {
+	height: 300px;
+}	
+
+.button {
+	margin-top: 20px;
+}
+
+
+
